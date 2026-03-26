@@ -1,384 +1,374 @@
-# Food-Trends-Understanding-Customer-Preferences-in-F-B
-Food Trends – Understanding Customer Preferences in F&amp;B
-# 📊 Food Trends Analytics Project
+<div align="center">
 
-## Understanding Customer Preferences in the Food & Beverage Industry Using Power BI and NLP
+# 🍽️ Food Trends: Understanding Customer Preferences in F&B
 
----
+### A Power BI Analytics Dashboard for the Food & Beverage Industry
 
-# 1. Introduction
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![NLP](https://img.shields.io/badge/NLP-Sentiment%20Analysis-blue?style=for-the-badge)
+![DAX](https://img.shields.io/badge/DAX-Measures-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-The Food and Beverage (F&B) industry is highly competitive and customer-driven. Businesses must continuously understand customer preferences, product satisfaction levels, and purchasing behavior to remain competitive and profitable.
+*Transform raw customer feedback into strategic business intelligence using AI, NLP, and interactive dashboards.*
 
-Customers today share their opinions through multiple channels such as product reviews, social media comments, ratings, and surveys. While this data is extremely valuable, organizations often struggle to convert large volumes of raw feedback into meaningful business insights.
-
-This project focuses on designing a structured analytics framework using data preprocessing techniques, Natural Language Processing (NLP), and interactive Power BI dashboards to transform customer feedback into strategic business intelligence.
-
----
-
-# 2. Problem Statement
-
-F&B companies collect massive amounts of structured and unstructured customer data but lack a unified system to analyze customer sentiment, product performance, behavioral segmentation, and market trends effectively.
-
-As a result, businesses face challenges such as:
-
-* Difficulty identifying which products customers truly prefer
-* Limited visibility into negative feedback trends
-* Inability to personalize marketing strategies
-* Lack of data-driven innovation planning
-* Delayed response to emerging customer expectations
-
-Therefore, the problem addressed in this project is:
-
-**How can organizations systematically collect, clean, analyze, and visualize customer feedback and behavioral data to support proactive decision-making and improve business performance?**
+</div>
 
 ---
 
-# 3. Project Objectives
+## 📋 Table of Contents
 
-The key objectives of this project include:
-
-* Understanding customer sentiment towards products and features
-* Comparing product categories based on ratings and feedback
-* Segmenting customers based on purchasing and feedback behavior
-* Identifying trending issues and innovation opportunities
-* Designing a strategic decision dashboard for business stakeholders
-
----
-
-# 4. Data Collection and Cleaning
-
-## 4.1 Structured Data Collection
-
-Structured data refers to organized data stored in tabular formats such as Excel files, SQL databases, or CSV datasets. This includes information like:
-
-* Product name
-* Customer rating
-* Purchase date
-* Sales value
-* Region
-
-Tools such as SQL queries, Excel Power Query, and Python Pandas are used to import and manage structured datasets. This data helps analyze purchase frequency, revenue contribution, and rating distribution.
-
-## 4.2 Unstructured Data Collection
-
-Unstructured data includes free-text feedback such as customer reviews, complaints, and social media comments. This type of data provides deeper insights into customer emotions, expectations, and product usage experiences.
-
-This data can be collected using APIs, web scraping methods, or exported review datasets.
+1. [Project Overview](#-project-overview)
+2. [Dashboard Preview](#-dashboard-preview)
+3. [Architecture](#-architecture)
+4. [Module 1 — Data Collection & Cleaning](#-module-1--data-collection--cleaning)
+5. [Module 2 — Sentiment Analysis](#-module-2--sentiment-analysis)
+6. [Module 3 — Product Insights](#-module-3--product-insights)
+7. [Module 4 — Customer Segmentation](#-module-4--customer-segmentation)
+8. [Module 5 — Strategy & Innovation Dashboard](#-module-5--strategy--innovation-dashboard)
+9. [DAX Measures Reference](#-dax-measures-reference)
+10. [Tech Stack](#-tech-stack)
+11. [Business Impact](#-business-impact)
 
 ---
 
-## 4.3 Text Data Preprocessing
+## 🌟 Project Overview
 
-Before performing sentiment analysis, text data must be cleaned and standardized.
+The Food & Beverage industry is customer-driven and deeply competitive. Businesses receive feedback across multiple channels — reviews, social media, surveys, and ratings — yet struggle to convert that raw data into actionable intelligence.
 
-### Tokenization
+This project delivers a **5-module Power BI analytics solution** that:
 
-This process divides sentences into smaller units such as words. Tokenization helps NLP models understand language patterns and frequency of important terms.
+- Ingests and cleans both **structured** (surveys, sales) and **unstructured** (reviews, social) data
+- Runs **AI/NLP-powered sentiment classification** on customer feedback
+- Benchmarks **product performance** across taste, price, and packaging
+- Identifies distinct **customer behavioral personas** through clustering
+- Powers a **Strategy & Innovation Dashboard** to track trends and guide R&D
 
-### Normalization
-
-Normalization ensures text consistency by converting all text into lowercase, removing punctuation, and applying stemming or lemmatization. This reduces redundancy and improves analysis accuracy.
-
-### Deduplication
-
-Duplicate reviews or repeated entries are removed to improve data quality, reduce storage requirements, and prevent biased analytical outcomes.
+> **Core question addressed:** How can F&B organizations systematically collect, clean, analyze, and visualize customer feedback to support proactive decision-making?
 
 ---
 
-# 5. Sentiment Analysis Module
+## 📸 Dashboard Preview
 
-Sentiment analysis is used to classify customer reviews into Positive, Neutral, or Negative categories using AI-based text analytics features available in Power BI.
-
-## 5.1 Power BI Sentiment Implementation
-
-Using Power Query AI Insights, a sentiment score between 0 and 1 is generated for each review. Based on threshold values, reviews are categorized into sentiment classes.
-
-This enables businesses to:
-
-* Detect dissatisfaction trends early
-* Monitor brand perception
-* Evaluate campaign success
-* Improve operational performance
-
-## 5.2 Sentiment Dashboard Visualizations
-
-Key visuals include:
-
-* Stacked column charts to compare sentiment distribution across products
-* Clustered bar charts to evaluate sentiment across features like delivery, price, and packaging
-* Map visuals to understand regional satisfaction differences
-* KPI cards showing average sentiment score and feedback ratios
-* Line charts tracking sentiment changes over time
-
-These dashboards provide real-time visibility into customer emotions.
+### Overview — Home Dashboard
+![Home Dashboard](Screenshot%202026-03-26%20194449.png)
 
 ---
 
-# 6. Product Insights Module
-
-This module evaluates how different product categories perform in terms of customer ratings and sentiment.
-
-Businesses can identify:
-
-* High-performing categories that should be expanded
-* Underperforming products needing improvement
-* Feature-level satisfaction drivers
-
-Correlation analysis between ratings and sales helps determine whether positive feedback directly influences revenue growth.
-
-Scatter plots, regression charts, and rating trend lines help stakeholders understand product lifecycle performance.
+### Sentiment Analysis Dashboard
+![Sentiment Analysis](Screenshot%202026-03-26%20200623.png)
 
 ---
 
-# 7. Customer Segmentation Module
-
-Customer segmentation divides users into behavioral groups using clustering techniques.
-
-### Example Personas
-
-**Loyal Fans** demonstrate frequent purchases and positive sentiment. They represent high-value customers who should be targeted with loyalty programs.
-
-**Critics** provide negative feedback and show inconsistent buying behavior. They represent churn risk and require targeted engagement strategies.
-
-**Silent Users** purchase products but rarely give feedback. Businesses must encourage interaction through reward systems or personalized communication.
-
-Segmentation is performed using features such as purchase frequency, sentiment score, rating patterns, and product preferences.
-
-Power BI filters enable deeper analysis by region, age group, and purchase channel.
+### Product Insights Dashboard
+![Product Insights](Screenshot%202026-03-26%20200900.png)
 
 ---
 
-# 8. Strategy and Innovation Dashboard
-
-This dashboard converts analytical insights into actionable business strategy.
-
-## 8.1 Keyword Trend Analysis
-
-By analyzing frequently mentioned words in reviews, organizations can detect emerging issues such as pricing concerns or demand for new product features.
-
-Word clouds and trend charts help visualize evolving customer expectations.
-
-## 8.2 Marketing and R&D Opportunity Identification
-
-Sentiment comparisons across features help prioritize innovation investments. Regions showing rising demand trends can be targeted with localized campaigns.
-
-Opportunity matrices help decision-makers balance impact and feasibility.
-
-## 8.3 Pre-Launch vs Post-Launch Sentiment Tracking
-
-Monitoring sentiment before and after product launches helps evaluate market acceptance and detect expectation mismatches.
-
-This reduces innovation risk and improves future product planning.
+### Customer Segmentation Dashboard
+![Customer Segmentation](Screenshot%202026-03-26%20201204.png)
 
 ---
 
-# 9. Role of Power BI in This Project
-
-Power BI acts as the central decision-support platform.
-
-Its major contributions include:
-
-* Data integration from multiple sources
-* AI-powered sentiment scoring
-* Interactive dashboards and drill-down capabilities
-* Real-time KPI monitoring
-* Business storytelling through visual analytics
-
-Power BI enables non-technical stakeholders to understand complex data insights easily and make informed decisions.
+### Strategy & Innovation Dashboard
+![Strategy Dashboard](Screenshot%202026-03-26%20201620.png)
 
 ---
 
-# 10. Business Impact
-
-The analytics system developed in this project helps organizations to:
-
-* Improve product quality and feature design
-* Optimize pricing and packaging strategies
-* Increase customer retention and engagement
-* Enhance marketing return on investment
-* Identify high-value customer segments
-* Support data-driven innovation planning
+### Executive Summary Dashboard
+![Executive Summary](Screenshot%202026-03-26%20201913.png)
 
 ---
 
-# 11. Conclusion
+## 🏗️ Architecture
 
-This project demonstrates how integrating data preprocessing, sentiment analysis, product performance analytics, customer segmentation, and strategic dashboards can transform raw customer feedback into powerful business intelligence.
-
-Organizations that continuously monitor these insights can shift from reactive decision-making to proactive growth strategies, improving customer satisfaction and achieving sustainable competitive advantage.
-
-The Strategy and Innovation Dashboard becomes a critical tool that aligns customer expectations with marketing initiatives, product development, and long-term business planning.
-
----
-# 📊 Role of Power BI in Food Trends Customer Preference Analytics Project
-
----
-
-# 1. Introduction to Power BI
-
-Power BI is a Business Intelligence and Data Visualization tool developed by Microsoft that helps organizations convert raw data into meaningful insights using interactive dashboards and reports.
-
-In this project, Power BI acts as the **central analytical platform** that integrates data collection, sentiment analysis, product performance monitoring, customer segmentation, and strategic decision-making into one unified environment.
-
-Power BI is especially powerful because it allows both technical and non-technical users to explore data, identify patterns, and make informed business decisions.
-
----
-
-# 2. Why Power BI is Used in This Project
-
-The Food & Beverage industry generates large volumes of data from multiple sources such as:
-
-* Sales databases
-* Customer review datasets
-* Survey responses
-* Social media feedback
-* Product rating logs
-
-Power BI helps combine all these data sources into a single analytical system.
-
-Key reasons for using Power BI include:
-
-* Easy data integration from Excel, SQL, APIs, and cloud platforms
-* Built-in data transformation capabilities using Power Query
-* AI features like sentiment scoring and key phrase extraction
-* Strong visualization capabilities for storytelling
-* Real-time dashboard monitoring
-* Interactive filtering and drill-down analysis
-
-This makes Power BI an ideal tool for customer preference analytics.
+```
+Raw Data Sources
+       │
+       ▼
+┌─────────────────────────────────────┐
+│  Module 1: Data Collection & ETL   │
+│  • Structured: CSV / SQL / Excel    │
+│  • Unstructured: Reviews / Social   │
+│  • Text cleaning: tokenize/normalize│
+│  • Output: unified fact tables      │
+└──────────────┬──────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────┐
+│  Power BI Data Model                │
+│  dim_customer • dim_product         │
+│  dim_region   • fact_reviews        │
+│  fact_sales   • fact_ratings        │
+└──┬──────────┬──────────┬────────────┘
+   │          │          │
+   ▼          ▼          ▼
+Module 2   Module 3   Module 4
+Sentiment  Product    Customer
+Analysis   Insights   Segmentation
+   │          │          │
+   └──────────┴──────────┘
+               │
+               ▼
+┌─────────────────────────────────────┐
+│  Module 5: Strategy & Innovation    │
+│  • Keyword trends • Opportunity map │
+│  • Pre/post launch sentiment track  │
+└─────────────────────────────────────┘
+```
 
 ---
 
-# 3. Data Loading and Transformation Using Power BI
+## 🗃️ Module 1 — Data Collection & Cleaning
 
-Power BI allows structured data import through the **Get Data feature**. Data from CSV files, Excel sheets, or SQL tables can be loaded into the Power BI model.
+### Data Sources
 
-Using Power Query Editor, data cleaning operations are performed such as:
+| Source Type | Examples | Import Method |
+|---|---|---|
+| **Structured** | Survey results, sales logs, ratings | Power Query / SQL / Excel |
+| **Unstructured** | Product reviews, social comments | API / web scraping / CSV export |
 
-* Removing null values
-* Filtering incorrect entries
-* Changing data types
-* Creating calculated columns
-* Merging datasets
-* Removing duplicates
+### Unified Schema
 
-This ensures high data quality before analysis begins.
+After ingestion, all sources are merged into a single analytics layer:
 
-For text data, Power BI supports AI transformations that enable sentiment detection and keyword analysis.
+```
+fact_reviews
+  ├── user_id          (FK → dim_customer)
+  ├── product_id       (FK → dim_product)
+  ├── review_text      (cleaned string)
+  ├── sentiment_score  (0.00 – 1.00)
+  ├── sentiment_label  (Positive / Neutral / Negative)
+  ├── review_date      (date)
+  └── region_id        (FK → dim_region)
+```
 
----
+### Text Preprocessing Pipeline
 
-# 4. Sentiment Analysis Capability in Power BI
-
-One of the most powerful features used in this project is **AI Sentiment Analysis**.
-
-Using Text Analytics in Power Query, Power BI assigns a sentiment score between 0 and 1 for each customer review.
-
-This enables classification of feedback into:
-
-* Positive sentiment
-* Neutral sentiment
-* Negative sentiment
-
-Businesses can track sentiment trends over time and identify customer dissatisfaction drivers such as delivery issues or pricing concerns.
-
-This feature reduces the need for complex NLP coding and allows faster implementation of analytics solutions.
-
----
-
-# 5. Data Modeling and DAX Calculations
-
-Power BI provides strong data modeling capabilities where relationships can be created between tables such as:
-
-* Customer Table
-* Product Table
-* Sales Table
-* Review Table
-
-Using DAX (Data Analysis Expressions), important business metrics can be calculated including:
-
-* Average sentiment score
-* Positive feedback ratio
-* Negative feedback ratio
-* Monthly sentiment trend
-* Average rating per category
-
-These measures allow dynamic analysis and real-time KPI monitoring.
+```
+Raw Review Text
+      │
+      ▼
+ Tokenization  ──► Split sentences into individual word tokens
+      │
+      ▼
+ Normalization ──► Lowercase · remove punctuation · stemming / lemmatization
+      │
+      ▼
+ Deduplication ──► Remove exact-match or near-duplicate review entries
+      │
+      ▼
+ Clean Review Text  ──► Ready for sentiment scoring
+```
 
 ---
 
-# 6. Visualization Power of Power BI
+## 💬 Module 2 — Sentiment Analysis
 
-Power BI supports multiple visual elements that help present insights clearly.
+Using **Power Query AI Insights (Text Analytics)**, each review receives a sentiment score between **0** (very negative) and **1** (very positive).
 
-Important visuals used in this project include:
+### Sentiment Classification Thresholds
 
-* Stacked column charts for sentiment distribution
-* Bar charts for product category comparison
-* Scatter plots for sales vs rating correlation
-* Line charts for sentiment trend analysis
-* Map visuals for regional performance
-* KPI cards for executive summary insights
-* Word clouds for trending keyword detection
+| Score Range | Label | Color Code |
+|---|---|---|
+| 0.67 – 1.00 | ✅ Positive | Green |
+| 0.34 – 0.66 | ⚠️ Neutral | Amber |
+| 0.00 – 0.33 | ❌ Negative | Red |
 
-These visuals help stakeholders quickly understand performance patterns and take action.
+### Key DAX Measures
 
----
+```dax
+Positive Feedback Ratio =
+DIVIDE(
+    COUNTROWS(FILTER(fact_reviews, fact_reviews[sentiment_label] = "Positive")),
+    COUNTROWS(fact_reviews)
+)
 
-# 7. Interactive Dashboard and User Experience
+Avg Sentiment Score =
+AVERAGEX(fact_reviews, fact_reviews[sentiment_score])
 
-Power BI dashboards are interactive.
+Sentiment Change MoM =
+VAR CurrentMonth = [Avg Sentiment Score]
+VAR PreviousMonth =
+    CALCULATE([Avg Sentiment Score], DATEADD(dim_date[Date], -1, MONTH))
+RETURN
+    DIVIDE(CurrentMonth - PreviousMonth, PreviousMonth)
+```
 
-Users can:
+### Dashboard Visuals
 
-* Filter insights by region
-* Drill down into specific products
-* Analyze customer segments
-* Compare pre-launch vs post-launch sentiment
-* Monitor real-time performance indicators
-
-This interactivity improves decision-making speed and enables personalized analysis.
-
----
-
-# 8. Strategic Decision Support
-
-Power BI transforms analytical outputs into business intelligence.
-
-Managers can use dashboards to:
-
-* Identify high-performing product categories
-* Detect churn-risk customer segments
-* Optimize marketing campaigns
-* Prioritize R&D investments
-* Monitor product launch success
-
-Thus, Power BI becomes not just a reporting tool but a **strategic planning system**.
+- **Stacked column chart** — sentiment distribution per product
+- **Clustered bar chart** — sentiment by feature (delivery, price, packaging)
+- **Filled map** — regional satisfaction heatmap
+- **KPI cards** — average sentiment score, positive ratio, negative ratio
+- **Line chart** — sentiment trend over time (monthly)
 
 ---
 
-# 9. Business Benefits of Using Power BI
+## 📦 Module 3 — Product Insights
 
-Implementation of Power BI analytics provides:
+### What This Module Answers
 
-* Faster insight generation
-* Reduced dependency on manual reporting
-* Improved customer satisfaction tracking
-* Better resource allocation
-* Increased revenue opportunities
-* Strong competitive positioning
+| Business Question | Visual Used |
+|---|---|
+| Which product categories have the highest average rating? | Clustered bar chart |
+| How does taste / price / packaging impact satisfaction? | Radar / spider chart |
+| Is there a correlation between positive sentiment and revenue? | Scatter plot with trend line |
+| Which products are declining in satisfaction? | Line chart with alert markers |
 
-Organizations that adopt Power BI gain a data-driven culture.
+### Correlation Analysis: Sales vs Feedback
+
+```
+High Sentiment + High Sales  ──► Star products (maintain & expand)
+High Sentiment + Low Sales   ──► Hidden gems (increase visibility)
+Low Sentiment  + High Sales  ──► At-risk products (urgent improvement needed)
+Low Sentiment  + Low Sales   ──► Candidates for discontinuation
+```
+
+---
+
+## 👥 Module 4 — Customer Segmentation
+
+Customers are clustered into three behavioral personas using **rating frequency**, **sentiment pattern**, and **product preference** signals.
+
+### Persona Definitions
+
+| Persona | Behaviour | Rating Pattern | Strategy |
+|---|---|---|---|
+| 🌟 **Loyal Fans** | Frequent buyers, consistently positive | High frequency, high score | Loyalty rewards, early access, referral programs |
+| 🔴 **Critics** | Irregular buyers, negative feedback | Low-mid frequency, low score | Targeted engagement, complaint resolution, win-back campaigns |
+| 👻 **Silent Users** | Regular buyers, rarely leave feedback | Moderate frequency, no score | Incentivized review prompts, NPS surveys, personalized outreach |
+
+### Segmentation Features Used
+
+```
+Cluster Input Features:
+  • purchase_frequency     (transactions per 90 days)
+  • avg_sentiment_score    (mean of all user reviews)
+  • avg_rating             (mean star rating)
+  • product_diversity      (distinct products purchased)
+  • days_since_last_review (recency of feedback)
+```
+
+### Interactive Filters Available
+
+- 🌍 **Region** — filter by country or city
+- 🎂 **Age Group** — filter by demographic bracket
+- 🛒 **Purchase Channel** — filter by online / in-store / delivery app
 
 ---
 
-# 10. Conclusion
+## 🚀 Module 5 — Strategy & Innovation Dashboard
 
-In this Food Trends analytics project, Power BI plays a foundational role by enabling data integration, sentiment analysis, behavioral segmentation, visualization, and strategic monitoring within a single platform.
+### 5.1 Trending Keyword Analysis
 
-Its ability to simplify complex data into understandable insights empowers businesses to make proactive decisions, improve product offerings, enhance customer engagement, and drive long-term growth.
+Word frequency analysis across all reviews surfaces **emerging customer concerns** and **demand signals** in real time.
 
-Therefore, Power BI serves as the core intelligence engine that transforms customer feedback into actionable business strategy.
+```
+High-frequency positive words  ──► Reinforce in marketing messaging
+High-frequency negative words  ──► Flag for product / ops teams
+Emerging new keywords          ──► Early warning for trend shifts
+```
+
+**Visuals:** Word cloud · Keyword frequency bar chart · Topic trend line
+
+### 5.2 Marketing & R&D Opportunity Map
+
+| Opportunity Zone | Sentiment Trend | Recommended Action |
+|---|---|---|
+| 📈 Rising satisfaction | Improving | Double down — scale marketing |
+| 📉 Falling satisfaction | Declining | Investigate root cause — prioritize fix |
+| 🆕 Untapped segment | Neutral / low engagement | Launch targeted campaign |
+| 💡 Feature gap detected | Mixed | Add to R&D roadmap |
+
+### 5.3 Pre-Launch vs Post-Launch Sentiment Tracking
+
+Monitor the impact of every product launch with before/after sentiment comparison:
+
+```
+Timeline Markers:
+  ──── [Pre-Launch Window: T-30 to T-0] ──── [Launch Day] ──── [Post-Launch Window: T+1 to T+90] ────
+
+Metrics Tracked:
+  • Avg sentiment score (pre vs post)
+  • Volume of reviews (pre vs post)
+  • Sentiment velocity (rate of change in first 30 days)
+  • Top positive / negative keywords post-launch
+```
 
 ---
+
+## 📐 DAX Measures Reference
+
+```dax
+-- Negative Feedback Ratio
+Negative Feedback Ratio =
+DIVIDE(
+    COUNTROWS(FILTER(fact_reviews, fact_reviews[sentiment_label] = "Negative")),
+    COUNTROWS(fact_reviews)
+)
+
+-- Average Rating per Category
+Avg Rating by Category =
+AVERAGEX(
+    RELATEDTABLE(fact_ratings),
+    fact_ratings[rating_value]
+)
+
+-- Sentiment Score (Post-Launch 30 Days)
+Post Launch Sentiment =
+CALCULATE(
+    [Avg Sentiment Score],
+    fact_reviews[review_date] >= [Launch Date]
+        && fact_reviews[review_date] <= [Launch Date] + 30
+)
+
+-- Customer Persona Label
+Persona =
+SWITCH(
+    TRUE(),
+    [Avg Sentiment Score] >= 0.67 && [Purchase Frequency] >= 5, "Loyal Fan",
+    [Avg Sentiment Score] <= 0.33, "Critic",
+    "Silent User"
+)
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| **BI & Visualisation** | Microsoft Power BI Desktop |
+| **Data Transformation** | Power Query (M language) |
+| **AI / NLP** | Power Query AI Insights — Text Analytics |
+| **Calculations** | DAX (Data Analysis Expressions) |
+| **Structured Data** | Excel · CSV · SQL Server |
+| **Unstructured Data** | REST APIs · Web scraping exports |
+| **Data Modelling** | Star schema with fact and dimension tables |
+
+---
+
+## 💼 Business Impact
+
+| Outcome | Benefit |
+|---|---|
+| 🎯 Targeted marketing | Reduce wasted spend by focusing on high-value segments |
+| 🛠️ Faster product fixes | Detect negative trends before they escalate |
+| 📣 Smarter launch planning | Validate demand signals before committing R&D budget |
+| 🔄 Improved retention | Identify at-risk customers and re-engage proactively |
+| 📊 Executive visibility | Real-time KPIs replace manual monthly reports |
+| 💡 Data-driven innovation | Align new product development with actual customer demand |
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+Made with ❤️ using Power BI | NLP | DAX
+
+</div>
