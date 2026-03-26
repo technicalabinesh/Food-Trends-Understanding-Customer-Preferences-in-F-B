@@ -4,6 +4,8 @@ Food Trends – Understanding Customer Preferences in F&amp;B
 
 ## Understanding Customer Preferences in the Food & Beverage Industry Using Power BI and NLP
 
+![Food Trends Dashboard Overview](<Screenshot 2026-03-26 194449.png>)
+
 ---
 
 # 1. Introduction
@@ -113,6 +115,8 @@ Key visuals include:
 
 These dashboards provide real-time visibility into customer emotions.
 
+![Sentiment Analysis Dashboard](<Screenshot 2026-03-26 200623.png>)
+
 ---
 
 # 6. Product Insights Module
@@ -128,6 +132,8 @@ Businesses can identify:
 Correlation analysis between ratings and sales helps determine whether positive feedback directly influences revenue growth.
 
 Scatter plots, regression charts, and rating trend lines help stakeholders understand product lifecycle performance.
+
+![Product Insights Dashboard](<Screenshot 2026-03-26 200900.png>)
 
 ---
 
@@ -146,6 +152,8 @@ Customer segmentation divides users into behavioral groups using clustering tech
 Segmentation is performed using features such as purchase frequency, sentiment score, rating patterns, and product preferences.
 
 Power BI filters enable deeper analysis by region, age group, and purchase channel.
+
+![Customer Segmentation Dashboard](<Screenshot 2026-03-26 201204.png>)
 
 ---
 
@@ -170,6 +178,8 @@ Opportunity matrices help decision-makers balance impact and feasibility.
 Monitoring sentiment before and after product launches helps evaluate market acceptance and detect expectation mismatches.
 
 This reduces innovation risk and improves future product planning.
+
+![Strategy and Innovation Dashboard](<Screenshot 2026-03-26 201620.png>)
 
 ---
 
@@ -209,6 +219,8 @@ This project demonstrates how integrating data preprocessing, sentiment analysis
 Organizations that continuously monitor these insights can shift from reactive decision-making to proactive growth strategies, improving customer satisfaction and achieving sustainable competitive advantage.
 
 The Strategy and Innovation Dashboard becomes a critical tool that aligns customer expectations with marketing initiatives, product development, and long-term business planning.
+
+![Power BI Analytics Summary](<Screenshot 2026-03-26 201913.png>)
 
 ---
 # 📊 Role of Power BI in Food Trends Customer Preference Analytics Project
