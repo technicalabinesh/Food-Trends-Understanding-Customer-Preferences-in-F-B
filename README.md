@@ -211,6 +211,22 @@ Organizations that continuously monitor these insights can shift from reactive d
 The Strategy and Innovation Dashboard becomes a critical tool that aligns customer expectations with marketing initiatives, product development, and long-term business planning.
 
 ---
+
+# 📸 Dashboard Screenshots
+
+![Dashboard Overview](Screenshot%202026-03-26%20194449.png)
+
+![Sentiment Analysis Dashboard](Screenshot%202026-03-26%20200623.png)
+
+![Product Insights Dashboard](Screenshot%202026-03-26%20200900.png)
+
+![Customer Segmentation Dashboard](Screenshot%202026-03-26%20201204.png)
+
+![Strategy and Innovation Dashboard](Screenshot%202026-03-26%20201620.png)
+
+![KPI and Trend Dashboard](Screenshot%202026-03-26%20201913.png)
+
+---
 # 📊 Role of Power BI in Food Trends Customer Preference Analytics Project
 
 ---
