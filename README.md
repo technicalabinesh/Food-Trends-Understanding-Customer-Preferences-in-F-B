@@ -175,57 +175,13 @@ This reduces innovation risk and improves future product planning.
 
 # 9. Role of Power BI in This Project
 
-Power BI acts as the central decision-support platform.
-
-Its major contributions include:
-
-* Data integration from multiple sources
-* AI-powered sentiment scoring
-* Interactive dashboards and drill-down capabilities
-* Real-time KPI monitoring
-* Business storytelling through visual analytics
-
-Power BI enables non-technical stakeholders to understand complex data insights easily and make informed decisions.
-
----
-
-# 10. Business Impact
-
-The analytics system developed in this project helps organizations to:
-
-* Improve product quality and feature design
-* Optimize pricing and packaging strategies
-* Increase customer retention and engagement
-* Enhance marketing return on investment
-* Identify high-value customer segments
-* Support data-driven innovation planning
-
----
-
-# 11. Conclusion
-
-This project demonstrates how integrating data preprocessing, sentiment analysis, product performance analytics, customer segmentation, and strategic dashboards can transform raw customer feedback into powerful business intelligence.
-
-Organizations that continuously monitor these insights can shift from reactive decision-making to proactive growth strategies, improving customer satisfaction and achieving sustainable competitive advantage.
-
-The Strategy and Innovation Dashboard becomes a critical tool that aligns customer expectations with marketing initiatives, product development, and long-term business planning.
-
----
-# 📊 Role of Power BI in Food Trends Customer Preference Analytics Project
-
----
-
-# 1. Introduction to Power BI
-
 Power BI is a Business Intelligence and Data Visualization tool developed by Microsoft that helps organizations convert raw data into meaningful insights using interactive dashboards and reports.
 
 In this project, Power BI acts as the **central analytical platform** that integrates data collection, sentiment analysis, product performance monitoring, customer segmentation, and strategic decision-making into one unified environment.
 
 Power BI is especially powerful because it allows both technical and non-technical users to explore data, identify patterns, and make informed business decisions.
 
----
-
-# 2. Why Power BI is Used in This Project
+## 9.1 Why Power BI is Used in This Project
 
 The Food & Beverage industry generates large volumes of data from multiple sources such as:
 
@@ -248,9 +204,7 @@ Key reasons for using Power BI include:
 
 This makes Power BI an ideal tool for customer preference analytics.
 
----
-
-# 3. Data Loading and Transformation Using Power BI
+## 9.2 Data Loading and Transformation Using Power BI
 
 Power BI allows structured data import through the **Get Data feature**. Data from CSV files, Excel sheets, or SQL tables can be loaded into the Power BI model.
 
@@ -263,31 +217,9 @@ Using Power Query Editor, data cleaning operations are performed such as:
 * Merging datasets
 * Removing duplicates
 
-This ensures high data quality before analysis begins.
+This ensures high data quality before analysis begins. For text data, Power BI supports AI transformations that enable sentiment detection and keyword analysis.
 
-For text data, Power BI supports AI transformations that enable sentiment detection and keyword analysis.
-
----
-
-# 4. Sentiment Analysis Capability in Power BI
-
-One of the most powerful features used in this project is **AI Sentiment Analysis**.
-
-Using Text Analytics in Power Query, Power BI assigns a sentiment score between 0 and 1 for each customer review.
-
-This enables classification of feedback into:
-
-* Positive sentiment
-* Neutral sentiment
-* Negative sentiment
-
-Businesses can track sentiment trends over time and identify customer dissatisfaction drivers such as delivery issues or pricing concerns.
-
-This feature reduces the need for complex NLP coding and allows faster implementation of analytics solutions.
-
----
-
-# 5. Data Modeling and DAX Calculations
+## 9.3 Data Modeling and DAX Calculations
 
 Power BI provides strong data modeling capabilities where relationships can be created between tables such as:
 
@@ -306,9 +238,7 @@ Using DAX (Data Analysis Expressions), important business metrics can be calcula
 
 These measures allow dynamic analysis and real-time KPI monitoring.
 
----
-
-# 6. Visualization Power of Power BI
+## 9.4 Visualization Power of Power BI
 
 Power BI supports multiple visual elements that help present insights clearly.
 
@@ -324,13 +254,9 @@ Important visuals used in this project include:
 
 These visuals help stakeholders quickly understand performance patterns and take action.
 
----
+## 9.5 Interactive Dashboard and User Experience
 
-# 7. Interactive Dashboard and User Experience
-
-Power BI dashboards are interactive.
-
-Users can:
+Power BI dashboards are interactive. Users can:
 
 * Filter insights by region
 * Drill down into specific products
@@ -340,13 +266,9 @@ Users can:
 
 This interactivity improves decision-making speed and enables personalized analysis.
 
----
+## 9.6 Strategic Decision Support
 
-# 8. Strategic Decision Support
-
-Power BI transforms analytical outputs into business intelligence.
-
-Managers can use dashboards to:
+Power BI transforms analytical outputs into business intelligence. Managers can use dashboards to:
 
 * Identify high-performing product categories
 * Detect churn-risk customer segments
@@ -356,9 +278,7 @@ Managers can use dashboards to:
 
 Thus, Power BI becomes not just a reporting tool but a **strategic planning system**.
 
----
-
-# 9. Business Benefits of Using Power BI
+## 9.7 Business Benefits of Using Power BI
 
 Implementation of Power BI analytics provides:
 
@@ -373,12 +293,31 @@ Organizations that adopt Power BI gain a data-driven culture.
 
 ---
 
-# 10. Conclusion
+# 10. Business Impact
+
+The analytics system developed in this project helps organizations to:
+
+* Improve product quality and feature design
+* Optimize pricing and packaging strategies
+* Increase customer retention and engagement
+* Enhance marketing return on investment
+* Identify high-value customer segments
+* Support data-driven innovation planning
+
+---
+
+# 11. Conclusion
+
+This project demonstrates how integrating data preprocessing, sentiment analysis, product performance analytics, customer segmentation, and strategic dashboards can transform raw customer feedback into powerful business intelligence.
 
 In this Food Trends analytics project, Power BI plays a foundational role by enabling data integration, sentiment analysis, behavioral segmentation, visualization, and strategic monitoring within a single platform.
 
 Its ability to simplify complex data into understandable insights empowers businesses to make proactive decisions, improve product offerings, enhance customer engagement, and drive long-term growth.
 
 Therefore, Power BI serves as the core intelligence engine that transforms customer feedback into actionable business strategy.
+
+Organizations that continuously monitor these insights can shift from reactive decision-making to proactive growth strategies, improving customer satisfaction and achieving sustainable competitive advantage.
+
+The Strategy and Innovation Dashboard becomes a critical tool that aligns customer expectations with marketing initiatives, product development, and long-term business planning.
 
 ---
